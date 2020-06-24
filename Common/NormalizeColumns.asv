@@ -1,0 +1,12 @@
+function [MNormalized] = NormalizeColumns(M, mny, mxy)
+    minM = min(M);
+    maxM = max(M);
+    nr   = size(M, 1);
+    minM = repmat(minM, nr, 1);
+    maxM = repmat(maxM, nr, 1);
+    MaxYMinY = 
+    M    = M - minM;
+    maxM = max(M);
+    MNormalized = M./maxM;
+end
+

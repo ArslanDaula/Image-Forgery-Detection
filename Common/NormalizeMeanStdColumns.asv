@@ -1,0 +1,19 @@
+function [MNormalized] = NormalizeMeanStdColumns(M)
+    meanM = mean(M);
+    stdM  = std(M);
+    nr    = size(M, 1);
+    meanM = repmat(meannM, nr, 1);
+    stdM  = repmat(stdM, nr, 1); I = stdM > 0;
+    MI    = M - meanM;
+    MI(I)    = MI(I)/stdM(I);
+    maxMI = max(MI);
+    minMI = min(MI);
+    maxM  = [maxMI; abs(minMI)];
+    maxM  = max(maxM);
+    maxM  = repmat(stdM, nr, 1); I = stdM > 0;
+    maxYminY = mxy - mny;
+    M     = (M - minM); 
+    M(I) = M(I)./maxMminM(I);
+    MNormalized = (maxYminY*M) + mny;
+end
+
