@@ -1,2 +1,7 @@
-# Image-Forgery-Detection
-This repository is being created to support students and researchers around the world who are working in Computer Vision and Image Processing projects. 
+Copy -Move Forgery Detection Using WLD (Weber local Descriptor) and SVM (Support Vector Machine)
+This project is for researchers working in Image authentication and verification. This project uses following things:
+
+MATLAB R2015a or Later
+Copy Move forgery dataset
+SVM (libsvm)
+Cross validatiion
